@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:id="@+id/setting_game_content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/setting_game_name_line"
+                style="@style/setting_edit_top"
+                android:layout_marginTop="@dimen/dimen_10_dip" >
+
+                <RelativeLayout
+                    android:id="@+id/setting_game_name_label"
+                    style="@style/setting_row_layout" >
+
+                    <TextView
+                        style="@style/setting_row_label"
+                        android:text="@string/name" />
+
+                    <View
+                        style="@style/setting_row_indicator"
+                        android:layout_marginTop="@dimen/dimen_1_dip"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <EditText
+                    android:id="@+id/name_edit"
+                    style="@style/setting_row_content"
+                    android:gravity="right|center"
+                    android:hint="@string/name_hint"
+                    android:paddingLeft="@dimen/dimen_10_dip" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/setting_game_type_line"
+                style="@style/setting_edit_middle" >
+
+                <RelativeLayout
+                    android:id="@+id/setting_game_type_label"
+                    style="@style/setting_row_layout" >
+
+                    <TextView
+                        style="@style/setting_row_label"
+                        android:text="@string/type" />
+
+                    <View
+                        style="@style/setting_row_indicator"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <Spinner
+                    android:id="@+id/setting_game_type_spn"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1.0"
+                    android:background="@null" />
+
+                <ImageView
+                    android:id="@+id/setting_game_type_detail_image"
+                    style="@style/setting_go_detail"
+                    android:layout_marginLeft="0.0dip"
+                    android:layout_marginRight="@dimen/dimen_10_dip" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/setting_game_memo_line"
+                style="@style/setting_edit_bottom" >
+
+                <RelativeLayout
+                    android:id="@+id/setting_game_memo_label"
+                    style="@style/setting_row_layout" >
+
+                    <TextView
+                        style="@style/setting_row_label"
+                        android:layout_alignParentTop="true"
+                        android:gravity="top|center"
+                        android:paddingTop="@dimen/dimen_10_dip"
+                        android:text="@string/memo" />
+
+                    <View
+                        style="@style/setting_row_indicator"
+                        android:layout_height="@dimen/dimen_86_dip"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <EditText
+                    android:id="@+id/memo_edit"
+                    style="@style/setting_row_content"
+                    android:layout_marginRight="@dimen/dimen_10_dip"
+                    android:gravity="top|right|center"
+                    android:hint="@string/memo_hint"
+                    android:paddingLeft="@dimen/dimen_10_dip"
+                    android:paddingTop="@dimen/dimen_10_dip" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,86 @@
+<resources>
+
+    <style name="AppTheme" parent="android:Theme.Light" />
+    
+    <style name="setting_edit_top">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:background">@drawable/setting_edit_top</item>
+        <item name="android:paddingTop">@dimen/dimen_1_dip</item>
+        <item name="android:paddingRight">@dimen/dimen_10_dip</item>
+        <item name="android:layout_width">@dimen/dimen_303_dip</item>
+        <item name="android:layout_height">@dimen/dimen_48_dip</item>
+    </style>
+    <style name="setting_edit_middle">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:background">@drawable/setting_edit_middle</item>
+        <item name="android:layout_width">@dimen/dimen_303_dip</item>
+        <item name="android:layout_height">@dimen/dimen_46_dip</item>
+    </style>
+    <style name="setting_edit_bottom">
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:background">@drawable/setting_edit_bottom</item>
+        <item name="android:layout_width">@dimen/dimen_303_dip</item>
+        <item name="android:layout_height">@dimen/dimen_90_dip</item>
+    </style>
+    <style name="setting_row_layout">
+        <item name="android:layout_width">@dimen/dimen_80_dip</item>
+        <item name="android:layout_height">fill_parent</item>
+    </style>
+    <style name="setting_row_indicator">
+        <item name="android:background">@drawable/setting_edit_row_selected_indicator</item>
+        <item name="android:layout_width">@dimen/dimen_73_dip</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:layout_alignParentRight">true</item>
+    </style>
+    <style name="setting_row_label">
+        <item name="android:textColor">#ff4e4840</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingLeft">@dimen/dimen_2_dip</item>
+        <item name="android:paddingRight">@dimen/dimen_2_dip</item>
+        <item name="android:layout_width">@dimen/dimen_70_dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/dimen_2_dip</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+    <style name="setting_row_content">
+        <item name="android:textColor">#ff4c2c00</item>
+        <item name="android:textColorHint">#ffc3c0bb</item>
+        <item name="android:ellipsize">middle</item>
+        <item name="android:background">@null</item>
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="setting_go_detail">
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:background">@drawable/setting_go_detail</item>
+        <item name="android:layout_width">@dimen/dimen_23_dip</item>
+        <item name="android:layout_height">@dimen/dimen_23_dip</item>
+        <item name="android:layout_marginLeft">@dimen/dimen_10_dip</item>
+    </style>
+    <style name="setting_color_sample">
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_width">@dimen/dimen_45_dip</item>
+        <item name="android:layout_height">@dimen/dimen_45_dip</item>
+        <item name="android:layout_margin">@dimen/dimen_5_dip</item>
+    </style>
+    
+    <style name="widget_currency_rate_input_btn">
+        <item name="android:textSize">@dimen/dimen_26_dip</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/widget_currency_rate_input_btn_text</item>
+        <item name="android:background">@drawable/widget_keypad_operation_digit</item>
+        <item name="android:focusable">true</item>
+        <item name="android:layout_width">@dimen/dimen_64_dip</item>
+        <item name="android:layout_height">@dimen/dimen_47_dip</item>
+        <item name="android:layout_marginTop">@dimen/dimen_2_dip</item>
+        <item name="android:layout_marginBottom">@dimen/dimen_2_dip</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+</resources>

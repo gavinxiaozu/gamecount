@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" 
+    android:background="@drawable/widget_currency_rate_bg">
+
+    <Button
+        android:id="@+id/keypad_number"
+        android:gravity="left|center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/dimen_5_dip"
+        android:paddingRight="@dimen/dimen_5_dip"
+        android:layout_marginLeft="@dimen/dimen_2_dip"
+        android:layout_marginTop="@dimen/dimen_5_dip"
+        android:layout_marginRight="@dimen/dimen_2_dip"
+        android:layout_marginBottom="@dimen/dimen_2_dip"
+        android:background="@drawable/keypad_number_display_bg"
+        android:text="0"
+        android:textColor="@color/black"
+        android:textSize="@dimen/dimen_28_dip" />
+
+    <LinearLayout
+        android:id="@+id/digit_input_panel_ly"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dimen_205_dip"
+        android:background="@drawable/widget_currency_rate_bg"
+        android:baselineAligned="false"
+        android:orientation="horizontal" >
+
+        <TableLayout
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0" >
+
+            <TableRow>
+
+                <Button
+                    android:id="@+id/seven"
+                    style="@style/widget_currency_rate_input_btn"
+                    android:text="@string/seven" />
+
+                <Button
+                    android:id="@+id/eight"
+                    style="@style/widget_currency_rate_input_btn"
+                    android:text="@string/eight" />
+
+                <Button
+                    android:id="@+id/nine"
+                    style="@style/widget_currency_rate_input_btn"
+                    android:text="@string/nine" />
+            </TableRow>
+
+            <TableRow>
+
+                <Button
+                    android:id="@+id/four"
+                    style="@style/widget_currency_rate_input_btn"
+                    android:text="@string/four" />
+
+                <Button
+                    android:id="@+id/five"
+                    style="@style/widget_currency_rate_input_btn"
+                    android:text="@string/five" />
+
+                <Button
+                    android:id="@+id/six"
+                    style="@style/widget_currency_rate_input_btn"
+                    android:text="@string/six" />
+            </TableRow>
+
+            <TableRow>
+
+                <Button
+                    android:id="@+id/one"
+                    style="@style/widget_currency_rate_input_btn"
+                    android:text="@string/one" />
+
+                <Button
+                    android:id="@+id/two"
+                    style="@style/widget_currency_rate_input_btn"
+                    android:text="@string/two" />
+
+                <Button
+                    android:id="@+id/three"
+                    style="@style/widget_currency_rate_input_btn"
+                    android:text="@string/three" />
+            </TableRow>
+
+            <TableRow>
+
+                <Button
+                    android:id="@+id/clear"
+                    style="@style/widget_currency_rate_input_btn"
+                    android:background="@drawable/keyboard_operation_clear_button" />
+
+                <Button
+                    android:id="@+id/zero"
+                    style="@style/widget_currency_rate_input_btn"
+                    android:text="@string/zero" />
+
+                <Button
+                    android:id="@+id/dot"
+                    style="@style/widget_currency_rate_input_btn"
+                    android:text="@string/dot" />
+            </TableRow>
+        </TableLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="@dimen/dimen_2_dip" >
+
+            <Button
+                android:id="@+id/subtract"
+                style="@style/widget_currency_rate_input_btn"
+                android:layout_marginLeft="@dimen/dimen_3_dip"
+                android:background="@drawable/keyboard_subtract_button" />
+
+            <Button
+                android:id="@+id/add"
+                style="@style/widget_currency_rate_input_btn"
+                android:layout_below="@+id/subtract"
+                android:layout_marginLeft="@dimen/dimen_3_dip"
+                android:background="@drawable/keyboard_add_button" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_below="@id/add"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/ok"
+                    style="@style/widget_currency_rate_input_btn"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="@dimen/dimen_3_dip"
+                    android:background="@drawable/keyboard_vertical_ok_button" />
+
+                <Button
+                    android:id="@+id/equal"
+                    style="@style/widget_currency_rate_input_btn"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="@dimen/dimen_3_dip"
+                    android:background="@drawable/keyboard_vertical_equal_button"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

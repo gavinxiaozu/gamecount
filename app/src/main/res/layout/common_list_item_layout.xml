@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dimen_50_dip"
+    android:orientation="horizontal" >
+
+    <View
+        android:id="@+id/list_itme_view_state"
+        android:layout_width="@dimen/dimen_10_dip"
+        android:layout_height="fill_parent" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/dimen_10_dip" >
+
+        <TextView
+            android:id="@+id/list_item_text_content"
+            android:layout_width="wrap_content"
+            android:layout_height="?android:attr/listPreferredItemHeight"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical"
+            android:text="Score"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/list_item_text_state"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/listPreferredItemHeight"
+            android:layout_toLeftOf="@id/list_item_text_content"
+            android:gravity="center_vertical"
+            android:text="Test Text sdsd"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,46 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="personal.gavin.gamecount"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="15" />
+
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" android:hardwareAccelerated="true"
+        tools:replace="android:icon, android:theme">
+        <activity
+            android:name=".HomeActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".GameListActivity"
+            android:label="@string/title_activity_game_list"
+        />
+        <activity
+            android:name=".GameStatusActivity"
+        />        
+        <activity
+            android:name=".SettingGameAddorEditActivity"
+        />
+        <activity
+            android:name=".SettingPlayerAddorEditActivity"
+        />
+        <activity
+            android:name=".SettingRoundAddorEditActivity"
+        />
+        <activity
+            android:name=".SettingPlayerStatusActivity"
+        />
+        <activity android:name="org.achartengine.GraphicalActivity" />
+    </application>
+
+</manifest>

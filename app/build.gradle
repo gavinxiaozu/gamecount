@@ -1,0 +1,29 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 16
+    buildToolsVersion "28.0.2"
+
+    defaultConfig {
+        applicationId "personal.gavin.gamecount"
+        minSdkVersion 14
+        targetSdkVersion 15
+
+        testApplicationId "personal.gavin.gamecount.test"
+        testInstrumentationRunner "android.test.InstrumentationTestRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+}
+
+dependencies {
+    compile 'com.android.support:support-v4:18.0.0'
+    compile 'com.j256.ormlite:ormlite-core:5.1'
+    compile 'com.j256.ormlite:ormlite-android:5.1'
+    compile project(':aChartEngine')
+}
